@@ -4,7 +4,6 @@ form {
   background-color: #F7C74A;
   margin: 0 auto;
 }
-
 form input, form select{
     margin-bottom: 15px;
     width: 100%;
@@ -19,6 +18,7 @@ form input, form select{
 h1 {
     text-align: center;
     color: #525c66; 
+
 }
 
 label {

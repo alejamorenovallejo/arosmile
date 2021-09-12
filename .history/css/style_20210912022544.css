@@ -4,9 +4,9 @@ form {
   background-color: #F7C74A;
   margin: 0 auto;
 }
-
-form input, form select{
+form input, form select,form label{
     margin-bottom: 15px;
+    font-family: "Roboto", sans-serif;
     width: 100%;
     padding: 10px;
     box-sizing: border-box; 
@@ -18,11 +18,6 @@ form input, form select{
 
 h1 {
     text-align: center;
-    color: #525c66; 
-}
-
-label {
-    font-size: 1em;
     color: #525c66; 
 
 }

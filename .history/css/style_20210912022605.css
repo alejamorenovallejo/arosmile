@@ -1,0 +1,16 @@
+form {
+  padding: 60px;
+  max-width: 600px;
+  background-color: #F7C74A;
+  margin: 0 auto;
+}
+form input, form select,form label{
+    margin-bottom: 15px;
+    
+}
+
+h1 {
+    text-align: center;
+    color: #525c66; 
+
+}

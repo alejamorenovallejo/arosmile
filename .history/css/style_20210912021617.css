@@ -1,28 +1,18 @@
 form {
   padding: 60px;
-  max-width: 600px;
-  background-color: #F7C74A;
+  max-width: 400px;
+  background-color: #e7e7e7;
   margin: 0 auto;
 }
-
-form input, form select{
+form input, form textarea{
     margin-bottom: 15px;
+    font-family: "Roboto", sans-serif;
     width: 100%;
     padding: 10px;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box; 
     border: none; 
     color: #525c66; 
     font-size: 1em;
     resize: horizontal; 
-}
-
-h1 {
-    text-align: center;
-    color: #525c66; 
-}
-
-label {
-    font-size: 1em;
-    color: #525c66; 
-
-}
+  }
