@@ -126,54 +126,63 @@
     <main>
     <div class="container-fluid">
       <form class="form-register">
-          <h1>PERFUMES</h1>
+          <h1>CLIENTES</h1>
           <div class="row">
             <div class="col-12 col-md-6 col-xl-4">
-              <label class="form-label" for="codigo_perfume">Código</label>
-              <input class="form-control" type="text" id="codigo_perfume" name="codigo_perfume" maxlength="10" 
-                    required placeholder="Código Perfume"></input>
+              <label class="form-label" for="documento_cliente">Documento</label>
+              <input class="form-control" type="number" id="documento_cliente" name="documento_cliente" maxlength="10" 
+                    required placeholder="Documento Cliente"></input>
             </div>
             <div class="col-12 col-md-6 col-xl-4">
-                <label class="form-label" for="nombre_perfume">Nombre</label>
-                <input class="form-control" type="text" id="nombre_perfume" name="nombre_perfume" maxlength="10" 
-                      required placeholder="Nombre Perfume"></input>
-            </div>
-            <div class="col-12 col-md-6 col-xl-4">
-              <label class="form-label" for="tamano_perfume">Tamaño</label>
-              <input class="form-control" type="number" id="tamano_perfume" name="tamano_perfume" maxlength="10" 
-                    required placeholder="Tamaño Perfume"></input>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-12 col-md-8 col-xl-4">
-                <label class="form-label" for="tipo_frangancia">Tipo Fragancia</label>
-                <select class="form-select" aria-label="form-select-lg example" id="tipo_frangancia" name="tipo_frangancia">
+                <label class="form-label" for="tipo_documento_cliente">Tipo Documento</label>
+                <select class="form-select" aria-label="form-select-lg example" id="tipo_documento_cliente" name="tipo_documento_cliente">
                     <option value=0 selected>Seleccione una opción</option>
-                    <option value=1>Floral</option>
-                    <option value=2>Frutal<ption>
-                    <option value=3>Citrico</option>
+                    <option value=1>Cédula de Ciudadania</option>
+                    <option value=2>Tarjeta de Identidad<ption>
+                    <option value=3>Cédula de Extranjeria</option>
                 </select>
             </div>
+            <div class="col-12 col-md-6 col-xl-4">
+              <label class="form-label" for="nombre_cliente">Nombre</label>
+              <input class="form-control" type="text" id="nombre_cliente" name="nombre_cliente" maxlength="10" 
+                    required placeholder="Nombre Cliente"></input>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-md-6 col-xl-4">
+                <label class="form-label" for="direccion_cliente">Dirección</label>
+                <input class="form-control" type="text" id="direccion_cliente" name="direccion_cliente" maxlength="10" 
+                        required placeholder="Dirección Cliente"></input>
+            </div>
             <div class="col-12 col-md-8 col-xl-4">
-              <label class="form-label" for="clasificacion_perfume">Clasificación</label>
-              <select class="form-select" aria-label="form-select-lg example" id="clasificacion_perfume" name="clasificacion_perfume">
+              <label class="form-label" for="departamento_cliente">Departamento</label>
+              <select class="form-select" aria-label="form-select-lg example" id="departamento_cliente" name="departamento_cliente">
                   <option value=0 selected>Seleccione una opción</option>
-                  <option value="1">Mujer</option>
-                  <option value="2">Hombre</option>
-                  <option value="3">Infantil</option>
+                  <option value="1">Valle del Cauca</option>
+                  <option value="2">Cundinamarca</option>
+                  <option value="3">Santander</option>
               </select>
-          </div>
-          <div class="col-12 col-md-6 col-xl-4">
-            <label class="form-label" for="stock_perfume">Stock</label>
-            <input class="form-control" type="number" id="stock_perfume" name="stock_perfume" maxlength="10" 
-                  required placeholder="Stock Perfum"></input>
-          </div>
+            </div>
+            <div class="col-12 col-md-8 col-xl-4">
+                <label class="form-label" for="ciudad_cliente">Ciudad</label>
+                <select class="form-select" aria-label="form-select-lg example" id="ciudad_cliente" name="ciudad_cliente">
+                    <option value=0 selected>Seleccione una opción</option>
+                    <option value="1">Cali</option>
+                    <option value="2">Bogotá D.C</option>
+                    <option value="3">Bucaramanga</option>
+                </select>
+            </div>
         </div>
           <div class="row">
             <div class="col-12 col-md-6 col-xl-4">
-              <label class="form-label" for="costo_perfume">Costo</label>
-              <input class="form-control" type="number" id="costo_perfume" name="costo_perfume" maxlength="10" 
-                    required placeholder="Costo Perfume"></input>
+              <label class="form-label" for="telefono_cliente">Teléfono</label>
+              <input class="form-control" type="number" id="telefono_cliente" name="telefono_cliente" maxlength="10" 
+                    required placeholder="Teléfono Cliente"></input>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4">
+                <label class="form-label" for="email_cliente">Email</label>
+                <input class="form-control" type="email" id="email_cliente" name="email_cliente" maxlength="10" 
+                      required placeholder="Email Cliente"></input>
             </div>
           </div>
           <div class="row">
@@ -189,18 +198,18 @@
   <div class="container-fluid">
     <div class="row">
       <div class="table-responsive">
-        <h1>LISTA PERFUMES</h1>
+        <h1>LISTA CLIENTES</h1>
       <table class="table table-bordered">
         <thead>
           <tr class="table-warning">
-            <th scope="col">Código</th>
+            <th scope="col">Documento</th>
+            <th scope="col">Tipo Documento</th>
             <th scope="col">Nombre</th>
-            <th scope="col">Tamaño</th>
-            <th scope="col">Tipo Fragancia</th>
-            <th scope="col">Clasificación</th>
-            <th scope="col">Precio</th>
-            <th scope="col">Stock</th>
-            <th scope="col">Costo</th>
+            <th scope="col">Dirección</th>
+            <th scope="col">Departamento</th>
+            <th scope="col">Ciudad</th>
+            <th scope="col">Teléfono</th>
+            <th scope="col">Email</th>
           </tr>
         </thead>
         <tbody>
